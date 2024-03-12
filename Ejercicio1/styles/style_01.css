@@ -1,0 +1,269 @@
+body{
+    background-image:url(../imgs/demo_03/cielo.jpg);
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.sol{
+    margin-left:-33px;
+    margin-top:-33px ;
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    animation: rotar 25s linear 0s infinite;
+}
+
+.sistema{
+    width:800px;
+    height:800px;
+    margin:auto;
+    position:relative;
+    /*border: 2px solid blue;*/
+}
+
+@-webkit-keyframes rotar{
+    0%{ transform:rotate(0deg);}
+    100%{ transform:rotate(360deg);}
+}
+
+.mercurio{
+    margin-left:-50px;
+    margin-top:-50px ;
+    position:absolute;
+
+    top:50%;
+    left:50%;
+    width:80px;
+    height:80px;
+    border: 2px solid orange;
+    border-radius:50%;
+    animation: rotar 4s linear 0s infinite;
+}
+
+.pla_Mer{
+    margin-left:5px;
+    margin-top:5px ;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+}
+
+.venus{
+    margin-left:-50px;
+    margin-top:-50px ;
+    position:absolute;
+
+    top:47%;
+    left:47%;
+    width:125px;
+    height:125px;
+    border: 2px solid yellow;
+    border-radius:65px;
+    animation: rotar 5s linear 0s infinite;
+}
+
+.pla_Venus{
+    margin-left:8px;
+    margin-top:8px ;
+    width:13px;
+    height:13px;
+    border-radius:40%;
+}
+
+.tierra{
+    margin-left:-54px;
+    margin-top:-54px ;
+    position:absolute;
+
+    top:45%;
+    left:45%;
+    width:165px;
+    height:165px;
+    border: 2px solid blue;
+    border-radius:85px;
+    animation: rotar 6s linear 0s infinite;
+}
+
+.pla_Tierra{
+    margin-left:13px;
+    margin-top:13px ;
+    width:15px;
+    height:15px;
+    border-radius:15px;
+}
+.luna{
+    margin-left:13px;
+    margin-top:13px ;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    animation: movluna 2s linear infinite;
+}
+
+@keyframes movluna{
+    0% { transform: rotate(0deg) translateX(-10px) rotate(0deg); margin-top: -10px;}
+    50% { transform: rotate(-180deg) translateX(-25px) rotate(180deg); margin-bottom: 20px;}
+    100% { transform: rotate(-360deg) translateX(-50px) rotate(360deg); margin-bottom: 40px;}
+}
+
+.marte{
+    margin-left:-58px;
+    margin-top:-58px ;
+    position:absolute;
+
+    top:42%;
+    left:42%;
+    width:225px;
+    height:225px;
+    border: 2px solid red;
+    border-radius:115px;
+    animation: rotar 7s linear 0s infinite;
+}
+
+.pla_Marte img{
+    margin-left:20px;
+    margin-top:20px ;
+    width:19px;
+    height:19px;
+    border-radius:50px;
+}
+
+.jupiter{
+    margin-left:-60px;
+    margin-top:-60px ;
+    position:absolute;
+
+    top:38%;
+    left:38%;
+    width:295px;
+    height:295px;
+    border: 2px solid #19FFBB;
+    border-radius:150px;
+    animation: rotar 9s linear 0s infinite;
+}
+
+.pla_Jupiter{
+    margin-left:32px;
+    margin-top:32px ;
+    width:20px;
+    height:20px;
+    border-radius:25px;
+}
+
+/* nuevo */
+.saturno{
+    margin-left:-62px;
+    margin-top:-62px ;
+    position:absolute;
+
+    top:35%;
+    left:35%;
+    width:360px;
+    height:360px;
+    border: 2px solid #DAA520;
+    border-radius:180px;
+    animation: rotar 10s linear 0s infinite;
+}
+
+.pla_Saturno{
+    margin-left:38px;
+    margin-top:38px ;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+}
+
+.urano{
+    margin-left:-64px;
+    margin-top:-64px ;
+    position:absolute;
+
+    top:32%;
+    left:32%;
+    width:420px;
+    height:420px;
+    border: 2px solid #ae00ff;
+    border-radius:210px;
+    animation: rotar 12s linear 0s infinite;
+}
+
+.pla_Urano img{
+    margin-left:50px;
+    margin-top:50px ;
+    width:15px;
+    height:15px;
+    border-radius:80px;
+}
+
+.neptuno{
+    margin-left:-66px;
+    margin-top:-66px ;
+    position:absolute;
+
+    top:29%;
+    left:29%;
+    width:480px;
+    height:480px;
+    border: 2px solid #00c3ff;
+    border-radius:240px;
+    animation: rotar 14s linear 0s infinite;
+}
+
+.pla_Neptuno img{
+    margin-left:60px;
+    margin-top:60px ;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+}
+
+.pluton{
+    margin-left:-70px;
+    margin-top:-70px ;
+    position:absolute;
+
+    top:26%;
+    left:26%;
+    width:540px;
+    height:540px;
+    border: 2px solid #9D9D9D;
+    border-radius:270px;
+    animation: rotar 16s linear 0s infinite;
+}
+
+.pla_Pluton img{
+    margin-left:65px;
+    margin-top:65px ;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+}
+
+nav{
+    background-color: beige;
+    width: 350px;
+    height: 10%;
+    margin-top: 55%;
+}
+nav li{
+    background-color: beige;
+    display: block;
+    list-style: none; 
+    padding-left: 0px;
+    padding-top: 3px;
+}
+
+nav li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p{
+    margin-top: 5px;
+    font-size: 20px;
+}
