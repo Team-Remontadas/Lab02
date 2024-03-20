@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <title>Patito</title>
+
+    <script>
+        var pun1 = 0, pun2 = 0, pun3 = 0, pun4 = 0;
+
+        <!-- Inicializando marcador -->
+
+        function ini(){
+            document.getElementById('pun1').innerText = pun1;
+            document.getElementById('pun2').innerText = pun2;
+            document.getElementById('pun3').innerText = pun3;
+            document.getElementById('pun4').innerText = pun4;
+        }
+
+        
+
+        function destruir(valor){
+            switch(valor){
+                case 1:
+                    document.getElementById('pato').src = 'estilos/gifs/explosion.gif'; 
+                    setTimeout(function(){document.getElementById('pato').src = 'estilos/gifs/pato-girando.gif'}, 1000);
+                    document.getElementById('pun1').innerText = ++pun1;
+                    break;
+                case 2:
+                    document.getElementById('pato2').src = 'estilos/gifs/explosion.gif'; 
+                    setTimeout(function(){document.getElementById('pato2').src = 'estilos/gifs/pato-imagen-animada-0011.gif'}, 1000);
+                    document.getElementById('pun2').innerText = ++pun2;
+                    break;
+                case 3:
+                    document.getElementById('pato3').src = 'estilos/gifs/explosion.gif'; 
+                    setTimeout(function(){document.getElementById('pato3').src = 'estilos/gifs/duck-dancing-duck.gif'}, 1000);
+                    document.getElementById('pun3').innerText = ++pun3;
+                    break;
+                case 4:
+                    document.getElementById('pato4').src = 'estilos/gifs/explosion.gif'; 
+                    setTimeout(function(){document.getElementById('pato4').src = 'estilos/gifs/f5baef4b6b6677020ab8d091ef78a3bc_w200.gif'}, 1000);
+                    document.getElementById('pun4').innerText = ++pun4;
+                    break;
+
+
+            }
+
+
+        }
+
+    </script>
+
+        
+
+
+</head>
+<body>
+    <audio controls autoplay>
+        <source src="estilos/audio/01. Painkiller.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+
+      <h1 style="margin-left: 200px; color: white; ">Buena suerte!</h1>
+
+    <img id="pato" src="estilos/gifs/pato-girando.gif" alt="" class="actVolar1" onclick="destruir(1)">
+
+    <img id="pato2" src="estilos/gifs/pato-imagen-animada-0011.gif" alt="" class="actVolar2" onclick="destruir(2)">
+
+    <img id="pato3" src="estilos/gifs/duck-dancing-duck.gif" alt="" class="actVolar3" onclick="destruir(3)">
+
+    <img id="pato4" src="estilos/gifs/f5baef4b6b6677020ab8d091ef78a3bc_w200.gif" alt="" class="actVolar4" onclick="destruir(4)">
+
+
+    <div class="marcador">
+        <table>
+            <caption><h2>Puntuación</h2></caption>
+            <tr>
+                <td><h3>Pato Random Giratorio</h3></td><td style="text-align:right"><p id="pun1"></p></td>
+            </tr>
+            <tr>
+                <td><h3>Pato Normal</h3></td><td style="text-align:right"><p id="pun2"></p></td>
+            </tr>
+            <tr>
+                <td><h3>Pato Extremadamente loco</h3></td><td style="text-align:right"><p id="pun3"></p></td>
+            </tr>
+            <tr>
+                <td><h3>Pato de chill</h3></td><td style="text-align:right"><p id="pun4"></p></td>
+            </tr>
+        </table>
+    </div>
+
+        
+</body>
+</html>

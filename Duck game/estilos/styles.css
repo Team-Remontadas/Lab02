@@ -1,0 +1,115 @@
+body {
+    background-image: url(imgs/duck-hunt-video-game-far-shot-vc79ubhfyndvj8ya.jpg);
+    background-size: cover;
+}
+
+audio {
+    opacity: 20%;
+}
+
+body img {
+    width: 150px;
+    height: 150px;
+}
+
+.marcador{
+    margin-top:30%;
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.marcador h3 {
+    background-color: black;
+    color: white;
+}
+
+.marcador h2 {
+    background-color: black;
+    color: white;
+}
+
+.marcador p {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 70px;
+    
+
+   
+}
+.marcador td {
+    color: white;
+    text-align: center;
+
+}
+
+table h3{
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+
+}
+
+.actVolar1{
+    position:absolute;
+    animation: volar1 2s linear 0s infinite;
+}
+
+.actVolar2{
+    position:absolute;
+    animation: volar2 3s linear 0s infinite ;
+}
+
+.actVolar3{
+    position:absolute;
+    animation: volar3 1.8s linear 0s infinite;
+}
+
+.actVolar4{
+    position:absolute;
+    animation: volar4 5s linear 0s infinite;
+}
+
+@keyframes volar1{
+    0%{ top:25px; left:1920px; transform:rotate(0deg);}
+    25%{ top:175px; left:1400px; transform:rotate(0deg);}
+    50%{ top:20px; left:900px; transform:rotate(0deg);}
+    75%{ top:400px; left:500px; transform:rotate(0deg);}
+    100%{ top:15px; left:0px; transform:rotate(0deg);}
+}
+
+
+@keyframes volar2{
+    0%{ top:50px; left:1920px; transform:rotate(0deg);}
+    25%{ top:125px; left:1400px; transform:rotate(0deg);}
+    50%{ top:52px; left:900px; transform:rotate(0deg);}
+    75%{ top:90px; left:500px; transform:rotate(0deg);}
+    100%{ top:40px; left:0px; transform:rotate(0deg);}
+}
+
+@keyframes volar3{
+    0%{ top:910px; right:1920px; transform:rotate(0deg);}
+    25%{ top:275px; right:1400px; transform:rotate(0deg);}
+    50%{ top:402px; right:900px; transform:rotate(0deg);}
+    75%{ top:240px; right:500px; transform:rotate(0deg);}
+    100%{ top:80px; right:0px; transform:rotate(0deg);}
+}
+
+@keyframes volar4{
+    0%{ top:200px; left:300px; transform:rotate(0deg);}
+    25%{ top:400px; left:420px; transform:rotate(0deg);}
+    50%{ top:600px; left:540px; transform:rotate(0deg);}
+    75%{ top:800px;  left:570px; transform:rotate(0deg);}
+    100%{ top:1000px; left:590px; transform:rotate(0deg);}
+}
+
+
+
+
+
+
+
+
+

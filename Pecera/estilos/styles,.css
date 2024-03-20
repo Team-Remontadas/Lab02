@@ -1,0 +1,128 @@
+body {
+    background-image: url(imgs/fondillo.png);
+    background-size: cover;
+}
+
+.burbujas1  {
+    position: fixed;
+    height: 500px;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.burbujas2  {
+    position: fixed;
+    height: 200px;
+    bottom: 0;
+    width: 200px;
+    left: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.burbujas3  {
+    position: fixed;
+    height: 700px;
+    bottom: 0;
+    width: 1100px;
+    left: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pez1 {
+    position: absolute;
+    animation: nadar1 20s linear 0s infinite;
+    width: 100px;
+    height: 100px;    
+}
+
+.pez2 {
+    position: absolute;
+    animation: nadar2 30s linear 0s infinite;
+    width: 200px;
+    height: 200px;    
+}
+
+.pez3 {
+    position: absolute;
+    animation: nadar3 30s linear 0s infinite;
+    width: 200px;
+    height: 200px;    
+}
+
+.pez4 {
+    position: absolute;
+    animation: nadar4 20s linear 0s infinite;
+    width: 250px;
+    height: 250px;    
+}
+
+
+.pez5 {
+    position: absolute;
+    animation: nadar5 10s linear 0s infinite;
+    width: 100px;
+    height: 100px;    
+}
+
+.pez6 {
+    position: absolute;
+    animation: nadar6 30s linear 0s infinite;
+    width: 200px;
+    height: 200px;    
+}
+
+@keyframes nadar1{
+    0%{ left: 0; top: 100px; transform:rotate(0deg);}
+    25% {left: 300px; top: 200px; transform: rotate(0deg);}
+    50% {left: 600px; top: 300px; transform: rotate(0deg);}
+    75% {left: 900px; top: 500px; transform: rotate(0deg);}
+    100% {left: 1400px; top: 520px;transform: rotate(0deg);}
+}
+
+@keyframes nadar2{
+    0%{ left: 0; top: 400px; transform:rotate(0deg);}
+    50%{ left: 300px; top: 100px; transform:rotate(0deg);}
+    80%{ left: 900px; top: 600px; transform:rotate(0deg);}
+    100%{ left: 1100px; top: 540px; transform:rotate(0deg);}
+}
+
+@keyframes nadar3{
+    0%{ right: 0; top: 100px; transform:rotate(0deg);}
+    25% {right: 300px; top: 200px; transform: rotate(0deg);}
+    50% {right: 600px; top: 300px; transform: rotate(0deg);}
+    75% {right: 900px; top: 500px; transform: rotate(0deg);}
+    100% {right: 1400px; top: 520px;transform: rotate(0deg);}
+}
+
+@keyframes nadar4{
+    0%{ right: 300px; top: 100px; transform:rotate(0deg);}
+    25% {right: 700px; top: 200px; transform: rotate(0deg);}
+    50% {right: 870px; top: 300px; transform: rotate(0deg);}
+    75% {right: 940px; top: 500px; transform: rotate(0deg);}
+    100% {right: 1000px; top: 520px;transform: rotate(0deg);}
+}
+
+@keyframes nadar5{
+    0%{ right: 0; bottom: 0; transform:rotate(0deg);}
+    25%{ right: 300px; bottom: 0; transform:rotate(0deg);}
+    50%{ right: 600px; bottom: 100px; transform:rotate(0deg);}
+    75%{ right: 900px; bottom: 400px; transform:rotate(0deg);}
+    100%{ right: 1000px; bottom: 600px; transform:rotate(0deg);} 
+}
+
+@keyframes nadar6{
+    0%{ right: 0; bottom: 50%; transform:rotate(0deg);}
+    25%{ right: 300px; bottom: 200px; transform:rotate(0deg);}
+    50%{ right: 600px; bottom: 100px; transform:rotate(0deg);}
+    75%{ right: 900px; bottom: 400px; transform:rotate(0deg);}
+    100%{ right: 1000px; bottom: 600px; transform:rotate(0deg);}
+    
+}
+
+
+
