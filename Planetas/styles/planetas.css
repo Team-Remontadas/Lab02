@@ -1,0 +1,384 @@
+
+
+body{
+    background-image: url(../Labo02/imgs/planetas/cielo.jpg);
+    background-attachment: fixed; /* va a mantener fija la imagen*/
+    background-size: cover; /* controla el tamaño de la imagen*/
+    background-repeat: no-repeat; /* evita que hayan repeticiones */
+
+}
+
+
+
+
+
+.sol{
+
+    background-image: url("imgs/planetas/sol02.png");
+
+    margin-left: -33px;
+    margin-top: -33px;
+    position: absolute;
+
+     width: 50px;
+    height: 50px;
+
+    top: 50%;
+    left: 50%;
+
+    animation: rotar 25s linear 0s infinite; /* hace que gire infinito */
+}
+
+
+.sistema{
+
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    position: relative;
+    /*border: 2px solid blue*/
+}
+
+
+
+
+.mercurio{
+
+    margin-left: -50px;
+    margin-top: -50px;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+
+    border: 2px solid orange;
+    border-radius: 50px;
+
+    animation: rotar 4s linear 0s infinite;
+
+}
+
+
+.pla_Mer{
+
+    background-image: url("imgs/planetas/mercurio.png");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 10px;
+    height: 10px;
+
+/*     border: 2px solid orange;
+    background-color: orange; */
+
+
+    border-radius: 10px;
+
+}
+
+
+.venus{
+
+    margin-left: -52px;
+    margin-top: -52px;
+    position: absolute;
+
+    top: 47%;
+    left: 47%;
+    width: 125px;
+    height: 125px;
+    border: 2px solid yellow;
+    border-radius: 62px;
+    animation: rotar 5s linear 0s infinite;
+
+}
+
+.pla_Venus{
+
+    background-image: url("imgs/planetas/venus.png");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 13px;
+    height: 13px;
+
+
+    /*  
+    border: 2px solid yellow;
+    background-color: yellow; */
+    border-radius: 12px;
+
+
+}
+
+
+.tierra{
+
+    margin-left: -54px;
+    margin-top: -54px;
+    position: absolute;
+
+    top: 45%;
+    left: 45%;
+    width: 165px;
+    height: 165px;
+    border: 2px solid blue;
+    border-radius: 85px;
+    animation: rotar 6s linear 0s infinite;
+
+}
+
+.pla_Tierra{
+
+    margin-left: 13px;
+    margin-top: 13px;
+    width: 15px;
+    height: 15px;
+
+    background-image: url("imgs/planetas/tierra.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+/* 
+    border: 2px solid blue;
+    background-color: blue; */
+
+
+    border-radius: 14px;
+
+}
+
+.luna {
+    position: absolute;
+    width: 5px; /* Tamaño de la Luna */
+    height: 5px; /* Tamaño de la Luna */
+
+    background-image: url("imgs/planetas/luna.png");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    /* background-color: gray; Color de la Luna */
+
+    border-radius: 50%; /* Hacerla redonda */
+    top: 40px; /* Ajustar según sea necesario para posicionarla correctamente alrededor de la Tierra */
+    left: -10px; /* Ajustar según sea necesario */
+    animation: rotarLuna 2s linear 0s infinite; /* Animación para orbitar */
+}
+
+
+
+
+.marte{
+
+    margin-left: -58px;
+    margin-top: -58px;
+    position: absolute;
+
+    top: 42%;
+    left: 42%;
+    width: 225px;
+    height: 225px;
+    border: 2px solid red;
+    border-radius: 115px;
+    animation: rotar 7s linear 0s infinite;
+
+}
+
+.pla_Marte{
+
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+
+    background-image: url("imgs/planetas/marte.png");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+
+ /*    border: 2px solid red;
+    background-color: red; */
+
+    
+    border-radius: 19px;
+
+}
+
+.jupiter{
+
+    margin-left: -60px;
+    margin-top: -60px;
+    position: absolute;
+
+    top: 38%;
+    left: 38%;
+    width: 295px;
+    height: 295px;
+    border: 2px solid #ffbb00;
+    border-radius: 150px;
+    animation: rotar 9s linear 0s infinite;
+
+}
+
+.pla_Jupiter{
+
+    margin-left: 27px;
+    margin-top: 27px;
+    width: 25px;
+    height: 25px;
+
+
+/*     border: 2px solid #ffbb00;
+    background-color: #ffbb00; */
+
+    background-image: url("imgs/planetas/jupiter.png");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+
+    border-radius: 25px;
+
+}
+
+
+
+.saturno{
+
+    margin-left: -92px;
+    margin-top: -87px;
+    position: absolute;
+
+    top: 38%;
+    left: 38%;
+    width: 360px;
+    height: 360px;
+    border: 2px solid #5d4d00;
+    border-radius: 190px;
+    animation: rotar 10s linear 0s infinite;
+
+}
+
+.pla_Saturno{
+
+    margin-left: 37px;
+    margin-top: 28px;
+    width: 35px;
+    height: 35px;
+
+    background-image: url("imgs/planetas/saturno.png");
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+
+/*     border: 2px solid #5d4d00;
+    background-color: #5d4d00; */
+
+
+    border-radius: 25px;
+
+}
+
+
+.urano{
+
+    margin-left: -124px;
+    margin-top: -114px;
+    position: absolute;
+
+    top: 38%;
+    left: 38%;
+    width: 420px;
+    height: 420px;
+    border: 2px solid #58db9b;
+    border-radius: 230px;
+    animation: rotar 12s linear 0s infinite;
+
+}
+
+.pla_Urano{
+
+    margin-left: 50px;
+    margin-top: 47px;
+    width: 20px;
+    height: 20px;
+
+
+    background-image: url("imgs/planetas/urano.png");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+
+   /*  border: 2px solid #58db9b;
+    background-color: #58db9b; */
+
+
+    border-radius: 25px;
+
+}
+
+.neptuno{
+
+    margin-left: -154px;
+    margin-top: -144px;
+    position: absolute;
+
+    top: 38%;
+    left: 38%;
+    width: 480px;
+    height: 480px;
+    border: 2px solid #6500b8;
+    border-radius: 230px;
+    animation: rotar 16s linear 0s infinite;
+
+}
+
+.pla_Neptuno{
+
+    margin-left: 230px;
+    margin-top: -13px;
+    width: 28px;
+    height: 28px;
+
+    background-image: url("imgs/planetas/urano.png");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+
+/*     border: 2px solid #6500b8;
+    background-color: #6500b8; */
+
+    border-radius: 25px;
+
+}
+
+
+@-webkit-keyframes rotar{
+
+    0%{ transform: rotate(0deg);}
+    100%{ transform: rotate(360deg);}
+
+}
+
+
+@keyframes rotarLuna {
+    0% {
+        transform: rotate(0deg) translateX(10px);
+    }
+    100% {
+        transform: rotate(360deg) translateX(10px);
+    }
+}
+
+
+
+
+

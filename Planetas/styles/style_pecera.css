@@ -1,0 +1,106 @@
+body {
+    background-image: url(/HTML/Labo02/imgs/pecera/fondo_pecera.jpg);
+    background-attachment: fixed; /* Keeps the background image fixed */
+    background-size: cover; /* Controls the size of the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.burbujas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/HTML/Labo02/imgs/pecera/burbujas04.gif');
+    background-repeat: repeat;
+}
+
+
+
+
+
+.magikarp {
+    position: absolute;
+    width: 200px;
+    animation: nadarIzquierda 5s linear infinite;
+}
+
+.lapras{
+    position: absolute;
+    width: 500px;
+    animation: nadarDerecha 10s linear infinite;
+    transform: scaleX(-1); /* intentando cuambiar la direccion a la que mira xd */
+}
+
+
+.corpish{
+    position: absolute;
+    width: 300px;
+    animation: alternate 15s linear infinite;
+
+}
+
+
+@keyframes moverCorpish {
+    0%, 10% {
+        bottom: 100px; /* Posición inicial */
+        left: 100px; /* Posición inicial */
+    }
+    50% {
+        bottom: 200px; /* Mueve Corpish hacia arriba y a la derecha en diagonal */
+        left: 400px;
+    }
+    100% {
+        bottom: 200px; /* Mantiene la altura y continúa hacia la derecha */
+        left: 800px; /* Ajusta según el ancho de tu pantalla/elemento contenedor */
+    }
+}
+
+
+@keyframes nadarIzquierda{ /* para magikarp */
+
+    0%{ top: 25px; left: 5000px; transform: rotate(0deg);}
+    25%{ top: 75px; left: 4000px; transform: rotate(0deg);}
+    50%{ top: 47px; left: 3000px; transform: rotate(0deg);}
+    75%{ top: 65px; left: 1000px; transform: rotate(0deg);}
+    100%{ top: 15px; left: 0px; transform: rotate(0deg);}
+
+}
+
+@keyframes nadarDerecha { /* para labras */
+    0% { bottom: 25px; left: 0; }
+    100% { bottom: 25px; left: 100%; }
+}
+
+
+
+/* @keyframes nadarDerecha{   para lapras
+    0%{ bottom: 25px; right: 1920px; transform: rotate(0deg) scaleX(-1);}
+    25%{ bottom: 75px; right: 1400px; transform: rotate(0deg) scaleX(-1);}
+    50%{ bottom: 47px; right: 900px; transform: rotate(0deg) scaleX(-1);}
+    75%{ bottom: 65px; right: 500px; transform: rotate(0deg) scaleX(-1);}
+    100%{ bottom: 15px; right: 0px; transform: rotate(0deg) scaleX(-1);}
+}  */
+
+
+
+
+
+
+/* @keyframes nadarDiagonalHaciaAbajo{
+0% { bottom: 100%; right: 0%; transform: rotate(0deg)}
+25% { bottom: 75%; right: 25%; transform: rotate(0deg)}
+50% { bottom: 50%; right: 50%; transform: rotate(0deg)}
+75% { bottom: 25%; right: 75%; transform: rotate(0deg)}
+100% { bottom: 0%; right: 100%; transform: rotate(0deg)}
+} */
+
+
+
+
+/* @keyframes nadarDiagonalHaciaArriba {
+    0% { bottom: 0%; right: 100%; }
+    25% { bottom: 25%; right: 75%; }
+    50% { bottom: 50%; right: 50%; }
+    75% { bottom: 75%; right: 25%; }
+    100% { bottom: 100%; right: 0%; }
+}
+ */
